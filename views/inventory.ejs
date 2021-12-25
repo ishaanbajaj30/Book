@@ -1,0 +1,10 @@
+<h1>Inventory</h1>
+
+<% storebook.forEach(function(post){%>
+    
+    <form method="POST" action="/inventory">
+        <p><%= post.name %>  ---- <%= post.count %>  </p>
+        <button type="submit" name="delbook" value="<%=post._id  %> ">Manage</button>
+    </form>
+    
+<%  })%> 

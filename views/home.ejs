@@ -1,0 +1,14 @@
+<h1>List of book</h1>
+
+<!-- <form method="get" action="/page2">
+    <button type="submit">Continue</button>
+</form> -->
+
+<% po.forEach(function(post){%>
+    
+    <form method="get" action="/<%=post  %>">
+        <p><%= post %> </p>
+        <button type="submit">Add</button>
+    </form>
+    
+<%  })%> 
